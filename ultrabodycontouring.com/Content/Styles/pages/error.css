@@ -1,0 +1,25 @@
+/*
+error.scss
+*/
+.introduction {
+  background-color: #f00;
+}
+.introduction:after {
+  border-top-color: #f00;
+}
+
+#error > article {
+  display: block;
+  float: none;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  text-align: center;
+}
+
+#error img {
+  display: block;
+  width: 75%;
+  max-width: 20em;
+  margin: 0 auto;
+  opacity: 0.2;
+}

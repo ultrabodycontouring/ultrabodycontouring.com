@@ -1,0 +1,20 @@
+/*
+404.scss
+*/
+#not-found > article {
+  display: block;
+  float: none;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  text-align: center;
+}
+#not-found ul {
+  list-style: none;
+}
+#not-found img {
+  display: block;
+  width: 75%;
+  max-width: 20em;
+  margin: 0 auto;
+  opacity: 0.2;
+}

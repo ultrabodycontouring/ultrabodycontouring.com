@@ -1,0 +1,37 @@
+﻿/*
+404.scss
+*/
+
+@import "../library/grid.scss";
+@import "../library/helper.scss";
+
+//
+// Introduction
+//
+
+.introduction {
+	//background-image: url("/Content/Images/background.jpg");
+}
+
+//
+// Not Found
+//
+
+#not-found {
+	> article {
+		@include max-column();
+		text-align: center;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	img {
+		display: block;
+		width: 75%;
+		max-width: 20em;
+		margin: 0 auto;
+		opacity: 0.2;
+	}
+}
