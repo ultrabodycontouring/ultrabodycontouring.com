@@ -1,0 +1,55 @@
+﻿@model ultrabodycontouring.com.Models.Contact
+
+<script>
+
+	function postContact() {
+
+		dataString = $("#contact form").serialize();
+
+		$.ajax({
+			url: "/Contact",
+			type: 'POST',
+			data: dataString,
+			success: function (result) {
+				$notification = $("#contact-notification");
+				$notification.html(result);
+				$notification.addClass("show");
+				$notification.addClass("success");
+				$notification.removeClass("error");
+			},
+			error: function (xhr, status, error) {
+				$notification = $("#contact-notification");
+				$notification.html(xhr.statusText);
+				$notification.addClass("show");
+				$notification.addClass("error");
+				$notification.removeClass("success");
+			}
+		});
+
+		return false;
+	}
+
+</script>
+
+<section id="contact">
+
+	<h2>Contact Us</h2>
+
+	<div id="contact-notification" class="alert"></div>
+
+	@using(Html.BeginForm())
+	{
+
+		@Html.LabelFor(m => m.Name)
+		@Html.TextBoxFor(m => m.Name, new { placeholder = "Your name" })
+
+	   	@Html.LabelFor(m => m.Email)
+		@Html.TextBoxFor(m => m.Email, new { @type = "email", placeholder = "Your email address" })
+
+	   	@Html.LabelFor(m => m.Message)
+		@Html.TextAreaFor(m => m.Message, 10, 55, new { placeholder = "Your message" })
+
+		<a class="button" onclick="postContact()">Send Message</a>
+	}
+
+</section>

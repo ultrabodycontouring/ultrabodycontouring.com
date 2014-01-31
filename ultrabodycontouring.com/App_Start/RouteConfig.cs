@@ -13,6 +13,12 @@ namespace ultrabodycontouring.com
 		{
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+			routes.MapRoute("contact",
+				"Contact",
+				new { controller = "Contact", action = "Index", id = UrlParameter.Optional },
+				new { httpMethod = new HttpMethodConstraint("POST") }
+			);
+
 			routes.MapRoute("Static",
 				"{*path}",
 				new { controller = "Static", action = "Index", id = UrlParameter.Optional } // Parameter defaults

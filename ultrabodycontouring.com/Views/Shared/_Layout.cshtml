@@ -44,28 +44,33 @@
 
     <body>
 	
-		<nav id="nav" role="navigation">
+		<div id="wrapper">
 
-			<a id="nav-button"><i>+</i></a>
-			<a id="logo" href="/"><img src="/Content/Images/logo-small.png" alt="Ultra Body Contouring" /></a>
-				
-			@Html.Partial("_Navigation")
+			<header id="header" role="banner">
 
-		</nav>
+				@Html.Partial("_Header")
 
-		<article id="content" role="main">
+			</header>
 
-			@RenderBody()
+			<nav id="nav" role="navigation">
 
-		</article>
-	
-		<footer id="footer" role="contentinfo">
+				@Html.Partial("_Navigation")
 
-			<a class="social twitter" href="https://twitter.com/ultrabodycontouring">Follow Ultra Body Contouring On Twitter</a>
-			<a class="social facebook" href="https://www.facebook.com/ultrabodycontouring">Follow Ultra Body Contouring On Facebook</a>
-			<a class="social linkedin" href="http://www.linkedin.com/company/ultrabodycontouring">Follow Ultra Body Contouring on LinkedIn</a>
+			</nav>
 
-		</footer>
+			<article id="content" role="main">
+
+				@RenderBody()
+
+			</article>
+
+			<footer id="footer" role="contentinfo">
+
+				@Html.Partial("_Footer")
+			
+			</footer>
+
+		</div>
 
 		<!-- jQuery -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -73,34 +78,8 @@
 
 		<!-- Scripts -->
 		@RenderSection("Scripts", false)
-
-		<!-- Responsive Menu Toggle -->
-		<script>
-
-			$(function () {
-
-				$("#nav-button").click(function () {
-					$("#nav-button i").toggleClass("open");
-					$("#nav ul").toggleClass("open");
-				});
-
-			});
-
-		</script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID and domain.com to your site's domain -->
-		<script>
-			(function (i, s, o, g, r, a, m) {
-				i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-					(i[r].q = i[r].q || []).push(arguments)
-				}, i[r].l = 1 * new Date(); a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-			ga('create', 'UA-XXXXX-X', 'domain.com');
-			ga('send', 'pageview');
-
-		</script>
+		
+        @Html.Partial("_Analytics")
 
     </body>
 

@@ -1,3 +1,44 @@
 /*
 contact.scss
 */
+#contact h2 {
+  margin-top: 0;
+  text-align: center;
+}
+#contact label {
+  display: block;
+  text-align: left;
+}
+#contact input,
+#contact textarea {
+  display: block;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  padding: .5em;
+  margin: .5em 0;
+}
+#contact .button {
+  display: block;
+  width: 150px;
+  padding: .5em 3em;
+  margin: 1em auto 0 auto;
+  background: #E49379;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+}
+#contact #Name,
+#contact #Email,
+#contact #Message {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}

@@ -1,13 +1,38 @@
 /*
-pricing.scss
+location.scss
 */
-#pricing h2 {
+#map {
+  position: relative;
+  padding: 0;
+  padding-bottom: 35em;
+  height: 0;
+  overflow: hidden;
+}
+#map iframe,
+#map object,
+#map embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#directions:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#directions h2 {
   margin-top: 0;
   text-align: center;
 }
+#directions address {
+  width: 11em;
+  margin: 1.625em auto;
+}
 
-#pricing-table,
-#pricing-info {
+#location, #information {
   display: block;
   float: none;
   margin-left: 0.75rem;
@@ -16,8 +41,7 @@ pricing.scss
 
 /* 12 column layout */
 @media screen and (min-width: 60rem) {
-  #pricing-table,
-  #pricing-info {
+  #location, #information {
     display: inline;
     float: left;
     width: 28.5rem;
@@ -27,8 +51,7 @@ pricing.scss
 }
 /* 16 column layout */
 @media screen and (min-width: 80rem) {
-  #pricing-table,
-  #pricing-info {
+  #location, #information {
     display: inline;
     float: left;
     width: 38.5rem;

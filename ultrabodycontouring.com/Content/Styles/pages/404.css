@@ -1,6 +1,13 @@
 /*
 404.scss
 */
+.introduction {
+  background-color: #444;
+}
+.introduction h2 {
+  color: #fff;
+}
+
 #not-found > article {
   display: block;
   float: none;

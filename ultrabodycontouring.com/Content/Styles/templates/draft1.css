@@ -1,0 +1,238 @@
+/*
+Template Layout
+*/
+body,
+#content,
+#footer,
+#nav,
+#nav ul,
+#nav ui li {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  clear: both;
+}
+
+body {
+  background-color: #fff;
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -ms-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+  -webkit-background-origin: padding-box;
+  -moz-background-origin: padding-box;
+  -ms-background-origin: padding-box;
+  -o-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  -moz-background-clip: border-box;
+  -ms-background-clip: border-box;
+  -o-background-clip: border-box;
+  background-clip: border-box;
+}
+
+#content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#footer {
+  padding: 4.875em 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  text-align: center;
+}
+#footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#footer ul {
+  list-style: none;
+  padding: 0;
+}
+#footer li {
+  display: inline-block;
+  width: 48px;
+  margin: 0 1em;
+  text-align: center;
+}
+#footer li img {
+  opacity: 0.1;
+}
+#footer .social {
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .5;
+}
+#footer .social + .social {
+  margin-left: .25em;
+}
+#footer .twitter {
+  background-image: url("/Content/Images/twitter-circle.svg");
+}
+#footer .facebook {
+  background-image: url("/Content/Images/facebook-circle.svg");
+}
+#footer .linkedin {
+  background-image: url("/Content/Images/linkedin-circle.svg");
+}
+
+#logo {
+  float: left;
+  padding: .5em 1.25em;
+  line-height: 3em;
+  vertical-align: middle;
+}
+#logo:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+#logo img {
+  display: block;
+  height: 2em;
+  opacity: .8;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.03);
+  z-index: 999;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -ms-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+#nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#nav:hover {
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.07);
+}
+#nav ul {
+  list-style: none;
+  display: none;
+  clear: both;
+}
+#nav ul.open {
+  display: block;
+}
+#nav li {
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.03);
+}
+#nav li:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+#nav li a {
+  position: relative;
+  display: block;
+  height: 3em;
+  padding: 0 1.5em;
+  line-height: 3em;
+  color: #899;
+}
+#nav li a:after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -8px;
+  margin-top: -16px;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.075);
+  content: "";
+}
+#nav li a:only-child:after {
+  border: 0;
+}
+#nav li ul {
+  display: none;
+}
+#nav li li {
+  display: block;
+  white-space: nowrap;
+}
+#nav li:hover > ul {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  background-color: #fff;
+  width: 10em;
+  margin-left: -5em;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.07);
+}
+#nav li:hover > a:after {
+  border-bottom-color: #fff;
+}
+
+#nav-button {
+  float: right;
+  width: 2em;
+  padding: .5em 0;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  font-size: 1.5em;
+  color: #899;
+  text-align: center;
+}
+#nav-button:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+#nav-button i {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 1em;
+  line-height: 1;
+  font-style: normal;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+#nav-button i.open {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* 12 column layout and greater */
+@media screen and (min-width: 60rem) {
+  #nav-button {
+    display: none;
+  }
+
+  #nav ul {
+    display: block;
+    clear: none;
+  }
+  #nav li {
+    display: inline-block;
+    border: 0;
+  }
+}

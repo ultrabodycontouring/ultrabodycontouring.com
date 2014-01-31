@@ -1,3 +1,30 @@
 /*
 faq.scss
 */
+#faq {
+  text-align: left;
+}
+#faq h2 {
+  margin-top: 0;
+  text-align: center;
+}
+#faq dt {
+  text-decoration: underline;
+}
+#faq dd {
+  margin-top: .5em;
+  margin-left: 0;
+}
+#faq dd + dd {
+  margin-top: 1em;
+}
+#faq dd + dt {
+  margin-top: 1.5em;
+}
+
+.max-column {
+  display: block;
+  float: none;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}

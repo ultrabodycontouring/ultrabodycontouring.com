@@ -4,9 +4,6 @@ error.scss
 .introduction {
   background-color: #f00;
 }
-.introduction:after {
-  border-top-color: #f00;
-}
 
 #error > article {
   display: block;

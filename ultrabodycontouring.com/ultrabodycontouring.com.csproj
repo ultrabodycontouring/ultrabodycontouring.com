@@ -108,33 +108,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\StaticController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Contact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="Content\Images\background.jpg" />
+    <Content Include="Content\Images\Banner\banner-1.jpg" />
+    <Content Include="Content\Images\Banner\banner-2.jpg" />
     <Content Include="Content\Images\error.svg" />
     <Content Include="Content\Images\facebook-circle.svg" />
+    <Content Include="Content\Images\Icons\american.png" />
+    <Content Include="Content\Images\Icons\discover.png" />
+    <Content Include="Content\Images\Icons\mastercard.png" />
+    <Content Include="Content\Images\Icons\visa.png" />
     <Content Include="Content\Images\linkedin-circle.svg" />
     <Content Include="Content\Images\logo-small.png" />
     <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\Office\office-1.jpg" />
+    <Content Include="Content\Images\Office\office-2.jpg" />
     <Content Include="Content\Images\twitter-circle.svg" />
     <Content Include="Content\Scripts\jquery-1.10.2.min.js" />
     <Content Include="Content\Styles\base\normalize.css" />
     <Content Include="Content\Styles\pages\404.css" />
     <Content Include="Content\Styles\pages\contact.css" />
+    <Content Include="Content\Styles\pages\location.css" />
     <Content Include="Content\Styles\pages\error.css" />
     <Content Include="Content\Styles\pages\faq.css" />
     <Content Include="Content\Styles\pages\home.css" />
     <Content Include="Content\Styles\pages\how-it-works.css" />
     <Content Include="Content\Styles\pages\pricing.css" />
     <Content Include="Content\Styles\style.css" />
+    <Content Include="Content\Styles\templates\draft1.css" />
     <Content Include="Content\Styles\templates\template.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -148,8 +159,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Styles\Review\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -236,6 +245,27 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Styles\pages\404.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Styles\templates\draft1.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Header.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Footer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Analytics.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Contact.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Static\Location.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Styles\pages\location.scss" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
