@@ -4,7 +4,7 @@ location.scss
 #map {
   position: relative;
   padding: 0;
-  padding-bottom: 35em;
+  padding-bottom: 100%;
   height: 0;
   overflow: hidden;
 }
@@ -18,44 +18,43 @@ location.scss
   height: 100%;
 }
 
-#directions:after {
+/* 12 column layout */
+@media screen and (min-width: 60rem) {
+  #google-map {
+    width: 50%;
+  }
+
+  #location-parking {
+    float: right;
+    width: 50%;
+  }
+}
+#location:after {
   content: "";
   display: table;
   clear: both;
 }
-#directions h2 {
+#location h2 {
   margin-top: 0;
   text-align: center;
 }
-#directions address {
-  width: 11em;
-  margin: 1.625em auto;
-}
 
-#location, #information {
+#directions {
   display: block;
   float: none;
   margin-left: 0.75rem;
   margin-right: 0.75rem;
 }
 
-/* 12 column layout */
-@media screen and (min-width: 60rem) {
-  #location, #information {
-    display: inline;
-    float: left;
-    width: 28.5rem;
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-  }
-}
 /* 16 column layout */
 @media screen and (min-width: 80rem) {
-  #location, #information {
+  #directions {
     display: inline;
     float: left;
-    width: 38.5rem;
+    width: 58.5rem;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+    margin-left: 10.75rem;
+    margin-right: 10.75rem;
   }
 }

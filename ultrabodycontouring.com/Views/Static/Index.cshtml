@@ -6,9 +6,17 @@
 	<link rel="stylesheet" href="@Url.Content("~/Content/Styles/Pages/home.css")">
 }
 
+@section Scripts {
+	<script src="@Url.Content("~/Content/Scripts/flamebug.slider.js")"></script>
+}
+
 <section id="banner">
 
-	<img src="/Content/Images/Banner/banner-2.jpg" />
+	<ul class="fb-slider" style="height: 575px;">
+		<li><img src="/Content/Images/Banner/banner-2.jpg" /></li>
+		<li><img src="/Content/Images/Banner/banner-1.jpg" /></li>
+	</ul>
+
 
 </section>
 

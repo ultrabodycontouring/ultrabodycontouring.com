@@ -134,6 +134,7 @@
     <Content Include="Content\Images\Office\office-1.jpg" />
     <Content Include="Content\Images\Office\office-2.jpg" />
     <Content Include="Content\Images\twitter-circle.svg" />
+    <Content Include="Content\Scripts\flamebug.slider.js" />
     <Content Include="Content\Scripts\jquery-1.10.2.min.js" />
     <Content Include="Content\Styles\base\normalize.css" />
     <Content Include="Content\Styles\pages\404.css" />
@@ -266,6 +267,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Styles\pages\location.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Styles\site\fb-slider.scss" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -5,34 +5,53 @@ pricing.scss
   margin-top: 0;
   text-align: center;
 }
+#pricing table {
+  font-size: .75em;
+}
 
-#pricing-table,
-#pricing-info {
+#pricing-table {
   display: block;
   float: none;
   margin-left: 0.75rem;
   margin-right: 0.75rem;
 }
 
+#credit,
+#questions {
+  text-align: center;
+}
+
+/* 6 column layout */
+@media screen and (min-width: 30rem) {
+  #pricing table {
+    font-size: .8em;
+  }
+}
 /* 12 column layout */
 @media screen and (min-width: 60rem) {
-  #pricing-table,
-  #pricing-info {
+  #pricing table {
+    font-size: inherit;
+  }
+
+  #pricing-table {
     display: inline;
     float: left;
-    width: 28.5rem;
+    width: 48.5rem;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+    margin-left: 5.75rem;
+    margin-right: 5.75rem;
   }
 }
 /* 16 column layout */
 @media screen and (min-width: 80rem) {
-  #pricing-table,
-  #pricing-info {
+  #pricing-table {
     display: inline;
     float: left;
-    width: 38.5rem;
+    width: 48.5rem;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+    margin-left: 15.75rem;
+    margin-right: 15.75rem;
   }
 }

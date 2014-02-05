@@ -5,14 +5,10 @@ location.scss
 @import "../library/grid.scss";
 @import "../library/helper.scss";
 
-//
-// Map
-//
-
 #map {
 	position: relative;
 	padding: 0;
-	padding-bottom: 35em;
+	padding-bottom: 100%;
 	height: 0;
 	overflow: hidden;
 
@@ -27,38 +23,40 @@ location.scss
 	}
 }
 
+/* 12 column layout */
+@media screen and (min-width: 60rem) {
+	#google-map {
+		width: 50%;
+	}
+
+	#location-parking {
+		float: right;
+		width: 50%;
+	}
+}
+
 //
 // Directions
 //
 
-#directions {
+#location {
 	@include clear-children;
 
 	h2 {
 		margin-top: 0;
 		text-align: center;
 	}
-
-	address {
-		width: 11em;
-		margin: $line-height * 1em auto;
-	}
 }
 
-#location, #information {
+#directions {
 	@include max-column;
-}
-
-/* 12 column layout */
-@media screen and (min-width: 60rem) {
-	#location, #information {
-		@include column(6);
-	}
 }
 
 /* 16 column layout */
 @media screen and (min-width: 80rem) {
-	#location, #information {
-		@include column(8);
+	#directions {
+		@include column(12);
+		@include prefix(2);
+		@include suffix(2);
 	}
 }
