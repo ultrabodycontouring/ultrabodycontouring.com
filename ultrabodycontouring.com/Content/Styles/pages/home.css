@@ -8,6 +8,21 @@ home.scss
   display: block;
 }
 
+#banner {
+  position: relative;
+  padding: 0;
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden;
+}
+#banner .fb-slider, #banner .fb-slider-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #about p {
   text-align: left;
   display: block;
