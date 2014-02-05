@@ -1,6 +1,18 @@
 /*
 how-it-works.scss
 */
+#how-it-works p {
+  text-align: left;
+  display: block;
+  float: none;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+#how-it-works h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
 #video {
   position: relative;
   padding: 0;
@@ -17,16 +29,4 @@ how-it-works.scss
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-#how-it-works p {
-  text-align: left;
-  display: block;
-  float: none;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-#how-it-works h2 {
-  margin-top: 0;
-  text-align: center;
 }

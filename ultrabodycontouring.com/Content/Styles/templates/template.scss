@@ -99,6 +99,23 @@ body {
 	}
 }
 
+#logo {
+	display: block;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-image: url("/Content/Images/Logo.svg");
+	background-position: center center;
+	background-size: contain;
+	width: 434px;
+	min-height: 181px;
+	max-width: 100%;
+	text-indent: -99999px;
+}
+
+.no-svg #logo {
+	background-image: url("/Content/Images/Logo.png");
+}
+
 //
 // Navigation
 //

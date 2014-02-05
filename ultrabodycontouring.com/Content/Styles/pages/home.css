@@ -1,40 +1,47 @@
 /*
 home.scss
 */
-#banner {
-  padding: 0;
-}
-#banner img {
+#about {
   display: block;
+  float: none;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
-
-#banner {
+#about ul {
   position: relative;
   padding: 0;
   padding-bottom: 50%;
   height: 0;
   overflow: hidden;
 }
-#banner .fb-slider, #banner .fb-slider-wrapper {
+#about ul img {
+  display: block;
+}
+#about ul .fb-slider, #about ul .fb-slider-wrapper {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-
 #about p {
   text-align: left;
-  display: block;
-  float: none;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
-#photos {
-  height: 40em;
+#video {
+  position: relative;
+  padding: 0;
+  padding-bottom: 50%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+#video iframe,
+#video object,
+#video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-image: url("/Content/Images/Office/office-1.jpg");
-  background-size: cover;
-  background-position: center center;
+  height: 100%;
 }
