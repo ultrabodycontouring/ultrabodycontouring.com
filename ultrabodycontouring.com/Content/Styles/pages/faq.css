@@ -1,11 +1,14 @@
 /*
 faq.scss
 */
-#faq {
+#faq #q-and-a {
   text-align: left;
+  display: block;
+  float: none;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 #faq h2 {
-  margin-top: 0;
   text-align: center;
 }
 #faq dt {
@@ -20,11 +23,4 @@ faq.scss
 }
 #faq dd + dt {
   margin-top: 1.5em;
-}
-
-.max-column {
-  display: block;
-  float: none;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }

@@ -10,10 +10,13 @@ faq.scss
 //
 
 #faq {
-	text-align: left;
+
+	#q-and-a {
+		text-align: left;
+		@include max-column;
+	}
 
 	h2 {
-		margin-top: 0;
 		text-align: center;
 	}
 
@@ -35,7 +38,5 @@ faq.scss
 	}
 }
 
-.max-column {
-	@include max-column;
-}
+
 

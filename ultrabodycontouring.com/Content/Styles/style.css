@@ -1452,41 +1452,33 @@ base/container.scss
     width: 60rem;
   }
 }
-@media screen and (min-width: 80rem) {
-  .container {
-    width: 80rem;
-  }
-}
 /*
 site/site.scss
 */
-article > section {
+#content > article > section {
   padding: 1.625em 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
-article > section > header {
-  text-align: center;
-}
-article > section > header h2 {
+#content > article > section h2 {
   font-size: 1.96875em;
   line-height: 1.65079;
   margin-top: 0.8254em;
   margin-bottom: 0.8254em;
-}
-article > section:last-child {
-  border-bottom: 0;
+  line-height: 1.25;
+  margin-top: 0;
 }
 
 /* 6 column layout */
 @media screen and (min-width: 30rem) {
-  article > section {
+  #content > article > section {
     padding: 3.25em 0;
   }
-  article > section > header h2 {
+  #content > article > section h2 {
     font-size: 2.625em;
     line-height: 1.2381;
     margin-top: 0.61905em;
     margin-bottom: 0.61905em;
+    margin-top: 0;
   }
 }
 table {

@@ -1,31 +1,36 @@
 /*
 home.scss
 */
-#about {
-  display: block;
-  float: none;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-#about ul {
+#banner ul {
   position: relative;
   padding: 0;
   padding-bottom: 50%;
   height: 0;
   overflow: hidden;
 }
-#about ul img {
+#banner ul img {
   display: block;
 }
-#about ul .fb-slider, #about ul .fb-slider-wrapper {
+#banner ul .fb-slider, #banner ul .fb-slider-wrapper {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-#about p {
-  text-align: left;
+
+#about {
+  display: block;
+  float: none;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+#about h2 {
+  text-align: center;
+}
+#about figure {
+  max-width: 40em;
+  margin: 1.625em auto;
 }
 
 #video {

@@ -64,14 +64,8 @@ body {
     max-width: 70em;
   }
 }
-@media screen and (min-width: 80rem) {
-  #wrapper {
-    min-width: 80em;
-    max-width: 90em;
-  }
-}
 #header {
-  padding: 1.625em 0;
+  padding: 0.8125em 0;
   text-align: center;
 }
 #header:after {
@@ -80,7 +74,7 @@ body {
   clear: both;
 }
 #header address {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-style: normal;
   font-weight: 700;
   opacity: .5;
@@ -163,12 +157,6 @@ body {
   #nav {
     min-width: 60em;
     max-width: 70em;
-  }
-}
-@media screen and (min-width: 80rem) {
-  #nav {
-    min-width: 80em;
-    max-width: 90em;
   }
 }
 #content:after {

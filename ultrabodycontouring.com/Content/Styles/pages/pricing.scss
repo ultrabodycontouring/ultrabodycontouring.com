@@ -12,53 +12,69 @@ pricing.scss
 #pricing {
 
 	h2 {
-		margin-top: 0;
 		text-align: center;
 	}
-
-	table {
-		font-size: .75em;
-	}
 }
+
+//
+// Pricing Table
+//
 
 #pricing-table {
 	@include max-column;
-}
 
-#credit,
-#questions {
-	text-align: center;
+	table {
+		font-size: .75em;
+
+		th:nth-child(3),
+		td:nth-child(3) {
+			background-color: #E5F4FF;
+			border-color: #EdFcFF;
+			color: #4E7383;
+		}
+	}
+
+	table#large {
+		display: none;
+	}
 }
 
 /* 6 column layout */
 @media screen and (min-width: 30rem) {
-	#pricing {
+	#pricing-table {
 		table {
 			font-size: .8em;
+		}
+
+		table#small {
+			display: none;
+		}
+
+		table#large {
+			display: table;
 		}
 	}
 }
 
 /* 12 column layout */
 @media screen and (min-width: 60rem) {
-	#pricing {
-		table {
-			font-size: inherit;
-		}
-	}
-
 	#pricing-table {
 		@include column(10);
 		@include prefix(1);
 		@include suffix(1);
+
+		table {
+			font-size: inherit;
+		}
 	}
 }
 
-/* 16 column layout */
-@media screen and (min-width: 80rem) {
-	#pricing-table {
-		@include column(10);
-		@include prefix(3);
-		@include suffix(3);
-	}
+//
+// Information
+//
+
+#credit,
+#questions {
+	text-align: center;
 }
+

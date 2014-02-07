@@ -5,7 +5,35 @@ location.scss
 @import "../library/grid.scss";
 @import "../library/helper.scss";
 
+//
+// Location
+//
+
+#location {
+	@include clear-children;
+
+	h2, h3 {
+		text-align: center;
+	}
+}
+
+//
+// Location & Parking
+//
+
+#location-and-parking {
+	@include max-column;
+}
+
+//
+// Map
+//
+
 #map {
+	margin: 0 auto;
+}
+
+#map figure {
 	position: relative;
 	padding: 0;
 	padding-bottom: 100%;
@@ -23,40 +51,93 @@ location.scss
 	}
 }
 
+/* 8 column layout */
+@media screen and (min-width: 40rem) {
+	#map {
+		width: 75%;
+	}
+}
+
 /* 12 column layout */
 @media screen and (min-width: 60rem) {
-	#google-map {
+	#map {
 		width: 50%;
+		margin-left: 0;
+		margin-right: 2em;
+	}
+	
+	#map figure {
+		margin-right: 3em;
 	}
 
-	#location-parking {
+	#information {
 		float: right;
 		width: 50%;
 	}
 }
 
 //
-// Directions
+// Information
 //
 
-#location {
-	@include clear-children;
-
-	h2 {
-		margin-top: 0;
-		text-align: center;
+#information {
+	ul {
+		padding-left: 1.5em;
 	}
 }
 
-#directions {
-	@include max-column;
+/* 12 column layout */
+@media screen and (min-width: 60rem) {
+	#information {
+		float: right;
+		width: 50%;
+
+		ul {
+			margin-top: $line-height * 2.5em;
+			margin-bottom: $line-height * 2.5em;
+		}
+	}
 }
 
-/* 16 column layout */
-@media screen and (min-width: 80rem) {
-	#directions {
-		@include column(12);
-		@include prefix(2);
-		@include suffix(2);
+//
+// Photos
+//
+
+#photos {
+	@include clear-children;
+
+	h2 {
+		text-align: center;
+	}
+
+	figure {
+		text-align: center;
+		@include max-column;
+
+		figcaption {
+			font-size: 2em;
+			font-weight: 100;
+		}
+	}
+}
+
+/* 6 column layout */
+@media screen and (min-width: 30rem) {
+	#photos figure {
+		@include column(3);
+	}
+}
+
+/* 8 column layout */
+@media screen and (min-width: 40rem) {
+	#photos figure {
+		@include column(4);
+	}
+}
+
+/* 12 column layout */
+@media screen and (min-width: 60rem) {
+	#photos figure {
+		@include column(6);
 	}
 }

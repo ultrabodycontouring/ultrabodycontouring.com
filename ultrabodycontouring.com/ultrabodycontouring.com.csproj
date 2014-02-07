@@ -133,8 +133,10 @@
     <Content Include="Content\Images\linkedin-circle.svg" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\logo.svg" />
-    <Content Include="Content\Images\Office\office-1.jpg" />
-    <Content Include="Content\Images\Office\office-2.jpg" />
+    <Content Include="Content\Images\Office\spa.jpg" />
+    <Content Include="Content\Images\Office\waiting-room.jpg" />
+    <Content Include="Content\Images\Results\after.jpg" />
+    <Content Include="Content\Images\Results\before.jpg" />
     <Content Include="Content\Images\twitter-circle.svg" />
     <Content Include="Content\Scripts\modernizr-2.6.2.js" />
     <Content Include="Content\Scripts\flamebug.slider.js" />
@@ -149,7 +151,6 @@
     <Content Include="Content\Styles\pages\how-it-works.css" />
     <Content Include="Content\Styles\pages\pricing.css" />
     <Content Include="Content\Styles\style.css" />
-    <Content Include="Content\Styles\templates\draft1.css" />
     <Content Include="Content\Styles\templates\template.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -249,9 +250,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Styles\pages\404.scss" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\Styles\templates\draft1.scss" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_Header.cshtml" />

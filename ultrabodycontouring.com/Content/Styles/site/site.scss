@@ -11,30 +11,29 @@ site/site.scss
 // Main Sections
 //
 
-article > section {
+#content > article > section {
 	padding: $line-height * 1em 0;
 	border-bottom: 1px solid rgba(0,0,0,0.05);
 
-	> header {
-		text-align: center;
-
-		h2 {
-			@include font-size(($h2-font-size * .75));
-		}
+	h2 {
+		@include font-size(($h2-font-size * .75));
+		line-height: 1.25;
+		margin-top: 0;
 	}
 
 	&:last-child {
-		border-bottom: 0;
+		//border-bottom: 0;
 	}
 }
 
 /* 6 column layout */
 @media screen and (min-width: 30rem) {
-	article > section {
+	#content > article > section {
 		padding: $line-height * 2em 0;
 
-		> header h2 {
+		h2 {
 			@include font-size($h2-font-size);
+			margin-top: 0;
 		}
 	}
 }

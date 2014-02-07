@@ -1,16 +1,36 @@
 /*
 location.scss
 */
+#location:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#location h2, #location h3 {
+  text-align: center;
+}
+
+#location-and-parking {
+  display: block;
+  float: none;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 #map {
+  margin: 0 auto;
+}
+
+#map figure {
   position: relative;
   padding: 0;
   padding-bottom: 100%;
   height: 0;
   overflow: hidden;
 }
-#map iframe,
-#map object,
-#map embed {
+#map figure iframe,
+#map figure object,
+#map figure embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -18,43 +38,91 @@ location.scss
   height: 100%;
 }
 
+/* 8 column layout */
+@media screen and (min-width: 40rem) {
+  #map {
+    width: 75%;
+  }
+}
 /* 12 column layout */
 @media screen and (min-width: 60rem) {
-  #google-map {
+  #map {
     width: 50%;
+    margin-left: 0;
+    margin-right: 2em;
   }
 
-  #location-parking {
+  #map figure {
+    margin-right: 3em;
+  }
+
+  #information {
     float: right;
     width: 50%;
   }
 }
-#location:after {
+#information ul {
+  padding-left: 1.5em;
+}
+
+/* 12 column layout */
+@media screen and (min-width: 60rem) {
+  #information {
+    float: right;
+    width: 50%;
+  }
+  #information ul {
+    margin-top: 4.0625em;
+    margin-bottom: 4.0625em;
+  }
+}
+#photos:after {
   content: "";
   display: table;
   clear: both;
 }
-#location h2 {
-  margin-top: 0;
+#photos h2 {
   text-align: center;
 }
-
-#directions {
+#photos figure {
+  text-align: center;
   display: block;
   float: none;
   margin-left: 0.75rem;
   margin-right: 0.75rem;
 }
+#photos figure figcaption {
+  font-size: 2em;
+  font-weight: 100;
+}
 
-/* 16 column layout */
-@media screen and (min-width: 80rem) {
-  #directions {
+/* 6 column layout */
+@media screen and (min-width: 30rem) {
+  #photos figure {
     display: inline;
     float: left;
-    width: 58.5rem;
+    width: 13.5rem;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
-    margin-left: 10.75rem;
-    margin-right: 10.75rem;
+  }
+}
+/* 8 column layout */
+@media screen and (min-width: 40rem) {
+  #photos figure {
+    display: inline;
+    float: left;
+    width: 18.5rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+}
+/* 12 column layout */
+@media screen and (min-width: 60rem) {
+  #photos figure {
+    display: inline;
+    float: left;
+    width: 28.5rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 }

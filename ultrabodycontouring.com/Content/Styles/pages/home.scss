@@ -6,11 +6,10 @@ home.scss
 @import "../library/helper.scss";
 
 //
-// About
+// Banner
 //
 
-#about {
-	@include max-column;
+#banner {
 
 	ul {
 		position: relative;
@@ -31,9 +30,22 @@ home.scss
 			height: 100%;
 		}
 	}
+}
 
-	p {
-		text-align: left;
+//
+// About
+//
+
+#about {
+	@include max-column;
+
+	h2 {
+		text-align: center;
+	}
+
+	figure {
+		max-width: 40em;
+		margin: $line-height * 1em auto;
 	}
 }
 

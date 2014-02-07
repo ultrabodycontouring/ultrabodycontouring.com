@@ -2,11 +2,7 @@
 pricing.scss
 */
 #pricing h2 {
-  margin-top: 0;
   text-align: center;
-}
-#pricing table {
-  font-size: .75em;
 }
 
 #pricing-table {
@@ -15,24 +11,33 @@ pricing.scss
   margin-left: 0.75rem;
   margin-right: 0.75rem;
 }
-
-#credit,
-#questions {
-  text-align: center;
+#pricing-table table {
+  font-size: .75em;
+}
+#pricing-table table th:nth-child(3),
+#pricing-table table td:nth-child(3) {
+  background-color: #E5F4FF;
+  border-color: #EdFcFF;
+  color: #4E7383;
+}
+#pricing-table table#large {
+  display: none;
 }
 
 /* 6 column layout */
 @media screen and (min-width: 30rem) {
-  #pricing table {
+  #pricing-table table {
     font-size: .8em;
+  }
+  #pricing-table table#small {
+    display: none;
+  }
+  #pricing-table table#large {
+    display: table;
   }
 }
 /* 12 column layout */
 @media screen and (min-width: 60rem) {
-  #pricing table {
-    font-size: inherit;
-  }
-
   #pricing-table {
     display: inline;
     float: left;
@@ -42,16 +47,11 @@ pricing.scss
     margin-left: 5.75rem;
     margin-right: 5.75rem;
   }
-}
-/* 16 column layout */
-@media screen and (min-width: 80rem) {
-  #pricing-table {
-    display: inline;
-    float: left;
-    width: 48.5rem;
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    margin-left: 15.75rem;
-    margin-right: 15.75rem;
+  #pricing-table table {
+    font-size: inherit;
   }
+}
+#credit,
+#questions {
+  text-align: center;
 }

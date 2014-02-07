@@ -1,25 +1,30 @@
 /*
 contact.scss
 */
-#contact h2 {
-  margin-top: 0;
+#contact-form {
+  display: block;
+  float: none;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+#contact-form h2 {
   text-align: center;
 }
-#contact label {
+#contact-form label {
   display: block;
   text-align: left;
 }
-#contact input,
-#contact textarea {
+#contact-form input,
+#contact-form textarea {
   display: block;
   background: #fff;
   border: 1px solid #f0f0f0;
   padding: .5em;
   margin: .5em 0;
 }
-#contact .button {
+#contact-form .button {
   display: block;
-  width: 150px;
+  width: 140px;
   padding: .5em 3em;
   margin: 1em auto 0 auto;
   background: #E49379;
@@ -35,9 +40,9 @@ contact.scss
   box-shadow: none;
   text-shadow: none;
 }
-#contact #Name,
-#contact #Email,
-#contact #Message {
+#contact-form #Name,
+#contact-form #Email,
+#contact-form #Message {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
