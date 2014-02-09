@@ -25,8 +25,16 @@ home.scss
   margin-left: 0.75rem;
   margin-right: 0.75rem;
 }
+#about h1,
 #about h2 {
+  margin: 0 !important;
   text-align: center;
+}
+#about #call {
+  text-align: center;
+}
+#about h3 {
+  opacity: .75;
 }
 #about figure {
   max-width: 40em;
