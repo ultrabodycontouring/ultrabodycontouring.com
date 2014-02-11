@@ -15,6 +15,12 @@ site/site.scss
 	padding: $line-height * 1em 0;
 	border-bottom: 1px solid rgba(0,0,0,0.05);
 
+	h1 {
+		@include font-size(($h1-font-size * .75));
+		line-height: 1.25;
+		margin-top: 0;
+	}
+
 	h2 {
 		@include font-size(($h2-font-size * .75));
 		line-height: 1.25;
@@ -31,9 +37,12 @@ site/site.scss
 	#content > article > section {
 		padding: $line-height * 2em 0;
 
+		h1 {
+			@include font-size($h1-font-size);
+		}
+
 		h2 {
 			@include font-size($h2-font-size);
-			margin-top: 0;
 		}
 	}
 }

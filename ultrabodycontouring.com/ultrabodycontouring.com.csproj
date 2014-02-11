@@ -123,6 +123,7 @@
     <Content Include="Content\Images\Apple-Touch-Icon.png" />
     <Content Include="Content\Images\Banner\banner-1.jpg" />
     <Content Include="Content\Images\Banner\banner-2.jpg" />
+    <Content Include="Content\Images\Banner\banner-3.jpg" />
     <Content Include="Content\Images\error.svg" />
     <Content Include="Content\Images\facebook-circle.svg" />
     <Content Include="Content\Images\favicon.png" />
