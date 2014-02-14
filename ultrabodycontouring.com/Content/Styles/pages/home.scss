@@ -17,6 +17,8 @@ home.scss
 		padding-bottom: 50%;
 		height: 0;
 		overflow: hidden;
+		@include max-column;
+		margin-top: $line-height * 2em;
 
 		img {
 			display: block;
