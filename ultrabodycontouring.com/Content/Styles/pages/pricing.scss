@@ -26,6 +26,10 @@ pricing.scss
 	table {
 		font-size: .75em;
 
+		th:nth-child(1) {
+			width: 30%;
+		}
+
 		th:nth-child(3),
 		td:nth-child(3) {
 			background-color: #E5F4FF;
@@ -44,6 +48,10 @@ pricing.scss
 	#pricing-table {
 		table {
 			font-size: .8em;
+		}
+
+		th:nth-child(1) {
+			width: 25%;
 		}
 
 		table#small {

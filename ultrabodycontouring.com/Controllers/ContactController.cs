@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Mail;
-using System.Web;
 using System.Web.Mvc;
+using System.Web.Configuration;
 using ultrabodycontouring.com.Models;
 
 namespace ultrabodycontouring.com.Controllers
@@ -18,13 +16,13 @@ namespace ultrabodycontouring.com.Controllers
 		{
 			try
 			{
-				string smtpHost = "smtp.sendgrid.net";
-				string smtpUser = "azure_41b0c2c8fd0de372ebef67afb37f62c1@azure.com";
-				string smtpPass = "whump7e7";
-				string destEmail = "sharon@ultrabodycontouring.com";
-				string emailSubj = "Website Contact";
+                string smtpHost = WebConfigurationManager.AppSettings["smtp-host"];
+                string smtpUser = WebConfigurationManager.AppSettings["smtp-user"];
+                string smtpPass = WebConfigurationManager.AppSettings["smtp-pass"];
+                string destEmail = WebConfigurationManager.AppSettings["contact-email"];
+                string emailSubj = WebConfigurationManager.AppSettings["contact-subject"];
 
-				var mail = new MailMessage();
+                var mail = new MailMessage();
 				
 				mail.From = new MailAddress(model.Email, model.Name);
 				mail.To.Add(new MailAddress(destEmail));
